@@ -19,7 +19,7 @@ function favoritarProduto(estado: any, acao: PayloadAction<Produto>) {
 
   if (estado.itens.find((p: any) => p.id === produto.id)) {
     const favoritosSemProduto = estado.itens.filter(
-      (p: any) => p.id !== produto.id
+      (p: any) => p.id === produto.id
     )
     estado.itens.pop(favoritosSemProduto)
   } else {
