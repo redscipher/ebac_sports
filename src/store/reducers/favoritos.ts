@@ -18,4 +18,6 @@ const favoritosParte = createSlice({
 })
 
 // exportacoes
-export default favoritosParte
+export default favoritosParte.reducer
+// -----------------------------------
+export const { favoritar } = favoritosParte.actions

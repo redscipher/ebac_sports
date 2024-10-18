@@ -21,7 +21,7 @@ function favoritarProduto(estado: any, acao: PayloadAction<Produto>) {
     const favoritosSemProduto = estado.itens.filter(
       (p: any) => p.id !== produto.id
     )
-    estado.itens.push(favoritosSemProduto)
+    estado.itens.pop(favoritosSemProduto)
   } else {
     estado.itens.push(produto)
   }

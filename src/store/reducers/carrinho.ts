@@ -8,7 +8,7 @@ const estadoInicial: CarrinhoT = {
   itens: []
 }
 
-// fatias
+// fatias: p/ adiconar ao carrinho
 const carrinhoParte = createSlice({
   name: 'carrinho',
   initialState: estadoInicial,
@@ -18,4 +18,6 @@ const carrinhoParte = createSlice({
 })
 
 // exportacoes
-export default carrinhoParte
+export default carrinhoParte.reducer
+// -------------------------------
+export const { adicionar } = carrinhoParte.actions
