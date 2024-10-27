@@ -12,6 +12,8 @@ function adicionarProduto(estado: any, acao: PayloadAction<Produto>) {
   } else {
     estado.itens.push(produto)
   }
+  // atualiza estado
+  estado.itens = [...estado.itens]
 }
 
 function favoritarProduto(estado: any, acao: PayloadAction<Produto>) {
@@ -25,6 +27,8 @@ function favoritarProduto(estado: any, acao: PayloadAction<Produto>) {
   } else {
     estado.itens.push(produto)
   }
+  // atualiza estado
+  estado.itensS = [...estado.itens]
 }
 
 // exportacoes
